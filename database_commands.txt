@@ -1,0 +1,16 @@
+create database messenger;
+use messenger;
+
+create table users (
+	id INT NOT NULL,
+	login VARCHAR (20) NOT NULL,
+	passwd VARCHAR (20) NOT NULL
+	);
+desc users;
+
+INSERT INTO users (id, login, passwd)
+VALUES (1, 'Max', '1qazZAQ!');
+
+SELECT id, login, passwd 
+FROM users
+WHERE login = 'Max';
